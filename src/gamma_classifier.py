@@ -6,8 +6,8 @@ def classify_gamma_ray_by_mass(mass: float) -> str:
     - Si la masse est entre 10 M☉ et 1 M☉, classé comme pulsar.
     - Sinon, classé comme autre source.
     Ces ordres de grandeur sont pris de façon arbitrairement pour illustrer un exemple de code.
-    Précision : Masse de la source du rayon gamma en unités de masse solaire (M☉).
-    
+    :param mass : Masse de la source du rayon gamma en unités de masse solaire (M☉).
+    : return: La classification du rayon gamma.
     """
     if not isinstance(mass, (int, float)):
         raise TypeError("La masse doit être un nombre.")
