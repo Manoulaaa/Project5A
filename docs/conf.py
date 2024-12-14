@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Projet 5A'
-copyright = '2024, Manal'
-author = 'Manal'
-release = '0.1'
+project = "Projet 5A"
+copyright = "2024, Manal"
+author = "Manal"
+release = "0.1"
 
 # -- General configuration ---------------------------------------------------
 extensions = [
