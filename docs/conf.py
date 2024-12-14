@@ -1,4 +1,4 @@
-#from typing import List  # Assurez-vous d'importer List
+from typing import List  # Assurez-vous d'importer List
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -16,11 +16,11 @@ release = '0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-#extensions: List[str] = [
- #   "sphinx.ext.autodoc",
-  #  "sphinx.ext.viewcode",
-   # "sphinx.ext.napoleon"
-#]
+extensions: List[str] = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.viewcode",
+    "sphinx.ext.napoleon"
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
