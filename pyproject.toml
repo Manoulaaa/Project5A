@@ -46,3 +46,6 @@ targets = [
 [build-system]
 requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+mypy_path = "src"

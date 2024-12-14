@@ -1,4 +1,4 @@
-from gamma_classifier import classify_gamma_ray_by_mass, main
+from src.gamma_classifier_model import classify_gamma_ray_by_mass, main
 import pytest
 from io import StringIO
 import sys

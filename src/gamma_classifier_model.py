@@ -1,3 +1,5 @@
+from typing import List
+
 def classify_gamma_ray_by_mass(mass: float) -> str:
     """
     Classification d'un rayon gamma en fonction de la masse de sa source (trou noir, pulsar, ou autre).
@@ -35,3 +37,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+def classify_gamma_ray(data: List[float]) -> str:
+    # Implémentation de la fonction
+    if len(data) > 5:
+        return "Pulsar"
+    return "Black Hole"
+1
