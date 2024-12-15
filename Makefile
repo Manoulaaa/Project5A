@@ -34,15 +34,8 @@ pdm_retry:
 	@echo "Tentative d'installation avec PDM (jusqu'à $(MAX_RETRIES) essais)..."
 	@for i in $(shell seq 1 $(MAX_RETRIES)); do \
 		echo "Essai $$i sur $(MAX_RETRIES)..."; \
-		pdm install && break || echo "Échec, nouvelle tentative..."; \
+		pdm install --dev && break || echo "Échec, nouvelle tentative..."; \
 	done
-
-sphinx_setup:
-	@echo "Configuration de Sphinx avec PDM..."
-	source $(CONDA_PATH)/etc/profile.d/conda.sh && \
-	conda activate $(ENV) && \
-	sphinx-quickstart --no-sep --project="Your Project" --author="Your Name" --release="0.1" --quiet docs
-	@echo "Sphinx configuré avec succès."
 
 clean:
 	@echo "Nettoyage des fichiers générés..."
